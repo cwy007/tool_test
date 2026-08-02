@@ -4,7 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fanout:consumer:vector": "node src/rabbitmq-test/fanout/consumer-vector.mjs",
+    "fanout:consumer:es": "node src/rabbitmq-test/fanout/consumer-es.mjs",
+    "fanout:producer": "node src/rabbitmq-test/fanout/producer.mjs",
+    "direct:consumer": "node src/rabbitmq-test/direct/consumer.mjs",
+    "direct:producer": "node src/rabbitmq-test/direct/producer.mjs",
+    "topic:consumer": "node src/rabbitmq-test/topic/consumer.mjs",
+    "topic:producer": "node src/rabbitmq-test/topic/producer.mjs",
+    "headers:consumer": "node src/rabbitmq-test/headers/consumer.mjs",
+    "headers:producer": "node src/rabbitmq-test/headers/producer.mjs"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +33,7 @@
     "@modelcontextprotocol/sdk": "^1.29.0",
     "@zilliz/milvus2-sdk-node": "^3.0.3",
     "ali-oss": "^6.23.0",
+    "amqplib": "^2.0.1",
     "chalk": "^5.6.2",
     "cheerio": "^1.2.0",
     "dashscope-sdk-official": "^1.26.0",
